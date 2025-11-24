@@ -1,0 +1,11 @@
+# 1. Ignorar TUDO inicialmente
+*
+
+# 2. Mas NÃO ignorar pastas (necessário para o git procurar arquivos .py dentro de subpastas)
+!*/
+
+# 3. Mas NÃO ignorar arquivos que terminam em .py
+!*.py
+
+# 4. Recomendado: Não ignorar o próprio arquivo .gitignore (para salvar essas regras)
+!.gitignore
