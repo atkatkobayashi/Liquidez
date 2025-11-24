@@ -593,3 +593,597 @@ Traceback (most recent call last):
     raise KeyError(key)
 KeyError: 'sobra_caixa'
 
+2025-11-24 14:28:27,486 - root - ERROR - Erro ao processar fundo 13151: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:28:31,372 - root - ERROR - Erro ao processar fundo 13152: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:28:34,401 - root - ERROR - Erro ao processar fundo 16778: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:28:37,663 - root - ERROR - Erro ao processar fundo PAVA: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:28:40,550 - root - ERROR - Erro ao processar fundo 14586: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:28:43,276 - root - ERROR - Erro ao processar fundo 16029: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:28:46,192 - root - ERROR - Erro ao processar fundo 19019: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:28:48,849 - root - ERROR - Erro ao processar fundo 14353: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:28:51,754 - root - ERROR - Erro ao processar fundo 22597: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:34:11,647 - root - ERROR - Erro ao processar fundo 13151: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:34:14,319 - root - ERROR - Erro ao processar fundo 13152: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:34:17,387 - root - ERROR - Erro ao processar fundo 16778: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:34:20,837 - root - ERROR - Erro ao processar fundo PAVA: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:34:23,619 - root - ERROR - Erro ao processar fundo 14586: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:34:26,634 - root - ERROR - Erro ao processar fundo 16029: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:34:29,532 - root - ERROR - Erro ao processar fundo 19019: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:34:32,201 - root - ERROR - Erro ao processar fundo 14353: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:34:34,987 - root - ERROR - Erro ao processar fundo 22597: 'list object' has no attribute 'iterrows'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 200, in top-level template code
+    {% for key,value in TabelaALM.iterrows() %}
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'iterrows'
+
+2025-11-24 14:37:58,272 - root - ERROR - Erro ao processar fundo 13151: 'value' is undefined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 202, in top-level template code
+    <td>{{value['ativo']}}</td>
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 471, in getitem
+    return obj[argument]
+           ~~~^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'value' is undefined
+
+2025-11-24 14:38:00,991 - root - ERROR - Erro ao processar fundo 13152: 'value' is undefined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 202, in top-level template code
+    <td>{{value['ativo']}}</td>
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 471, in getitem
+    return obj[argument]
+           ~~~^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'value' is undefined
+
+2025-11-24 14:38:04,076 - root - ERROR - Erro ao processar fundo 16778: 'value' is undefined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 202, in top-level template code
+    <td>{{value['ativo']}}</td>
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 471, in getitem
+    return obj[argument]
+           ~~~^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'value' is undefined
+
+2025-11-24 14:38:07,291 - root - ERROR - Erro ao processar fundo PAVA: 'value' is undefined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 202, in top-level template code
+    <td>{{value['ativo']}}</td>
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 471, in getitem
+    return obj[argument]
+           ~~~^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'value' is undefined
+
+2025-11-24 14:38:10,117 - root - ERROR - Erro ao processar fundo 14586: 'value' is undefined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 202, in top-level template code
+    <td>{{value['ativo']}}</td>
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 471, in getitem
+    return obj[argument]
+           ~~~^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'value' is undefined
+
+2025-11-24 14:38:12,849 - root - ERROR - Erro ao processar fundo 16029: 'value' is undefined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 202, in top-level template code
+    <td>{{value['ativo']}}</td>
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 471, in getitem
+    return obj[argument]
+           ~~~^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'value' is undefined
+
+2025-11-24 14:38:15,790 - root - ERROR - Erro ao processar fundo 19019: 'value' is undefined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 202, in top-level template code
+    <td>{{value['ativo']}}</td>
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 471, in getitem
+    return obj[argument]
+           ~~~^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'value' is undefined
+
+2025-11-24 14:38:18,578 - root - ERROR - Erro ao processar fundo 14353: 'value' is undefined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 202, in top-level template code
+    <td>{{value['ativo']}}</td>
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 471, in getitem
+    return obj[argument]
+           ~~~^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'value' is undefined
+
+2025-11-24 14:38:21,496 - root - ERROR - Erro ao processar fundo 22597: 'value' is undefined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 468, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 280, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 202, in top-level template code
+    <td>{{value['ativo']}}</td>
+    
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 471, in getitem
+    return obj[argument]
+           ~~~^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'value' is undefined
+

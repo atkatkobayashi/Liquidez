@@ -188,6 +188,45 @@
                     </fieldset>
                 </div>
 
+                <div id="TabelaALM">
+                    <fieldset>
+                        <legend>Casamento de Liquidez (ALM)</legend>
+                        <table>
+                            <tr>
+                                <th>Data</th>
+                                <th>Resgate Acum.</th>
+                                <th>Liq. Acum.</th>
+                                <th>Sobra Caixa</th>
+                            </tr>
+
+                            {% if TabelaALM | length == 0 %}
+                            <tr>
+                                <td colspan='4' class='td_center'>Sem dados de ALM.</td>
+                            </tr>
+                            {% else %}
+
+                            {% for row in TabelaALM %}
+                            <tr>
+                                <td class='td_center'>{{ row['data'] | date_format }}</td>
+                                <td class='td_center'>{{ row['resgate_acumulado'] | commafy }}</td>
+                                <td class='td_center'>{{ row['liquidez_acumulada'] | commafy }}</td>
+
+                                {% if row['sobra_caixa'] < 0 %} <td class='td_center'
+                                    style="color: red; font-weight: bold;">
+                                    {{ row['sobra_caixa'] | commafy }}
+                                    </td>
+                                    {% else %}
+                                    <td class='td_center' style="color: green;">
+                                        {{ row['sobra_caixa'] | commafy }}
+                                    </td>
+                                    {% endif %}
+                            </tr>
+                            {% endfor %}
+
+                            {% endif %}
+                        </table>
+                    </fieldset>
+                </div>
             </div>
             <div class="content_right">
 

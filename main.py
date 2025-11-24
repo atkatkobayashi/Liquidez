@@ -259,7 +259,7 @@ def AgregarAtivoPassivo(fundo_id, data_base, FluxoTodosFundo):
 
     return pd.DataFrame(AgregadoAtivoPassivo, columns = ['janela', 'ativo', 'passivo'])
 
-def CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress):
+def CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM):
 
     # Cria Arquivo HTML
     templateLoader = jinja2.FileSystemLoader(searchpath="./")
@@ -279,7 +279,7 @@ def CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPer
     
     outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo, 
         ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
-        CenariosStress = CenariosStress)
+        CenariosStress = CenariosStress, TabelaALM = TabelaALM)
     
     html_file = open('./Reports/ReportFiles/html_files/' + str(dados_fundo['data_base']).replace('-','') + '_' + str(dados_fundo['fundo_id']) + '.html', 'w')
     html_file.write(outputText)
@@ -424,7 +424,16 @@ if __name__ == "__main__":
                 # Salva o arquivo
                 df_export.to_excel(nome_arquivo_alm, index=False)
                 print(f"   -> Detalhe do ALM salvo em: {nome_arquivo_alm}")
-                
+            
+            # --- PREPARAÇÃO DA TABELA PARA O RELATÓRIO ---
+            # Se o check falhou ou deu erro, passamos uma lista vazia ou a tabela parcial
+            if not df_alm_detalhe.empty:
+                # Exemplo: Pegar apenas os próximos 10 dias de fluxo ou dias com caixa negativo
+                df_view = df_alm_detalhe.head(10).copy() 
+                TabelaALM_Formatada = df_view.to_dict('records')
+            else:
+                TabelaALM_Formatada = []
+
             GraficoAtivoDiasLiquidar(cursor, fundo_id, data_base)
             FluxoAtivosFundo.to_excel(str(fundo_id) + '.xlsx')
 
@@ -449,7 +458,7 @@ if __name__ == "__main__":
             PathImgPercMedioResgates = "../../../Reports/aux_files/img/" + str(fundo_id) + "_" + data_base.strftime("%Y-%m-%d").replace("-", "") + ".png"
             PathImgDiasLiquidarAtivo = "../../../Reports/aux_files/img/ativo_dias_liquidar_" + str(fundo_id) + "_" + data_base.strftime("%Y-%m-%d").replace("-", "") + ".png"
 
-            CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+            CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
             asyncio.get_event_loop().run_until_complete(CriaRelatorioPDF(dados_fundo))
         
             # CHECK DE PL
