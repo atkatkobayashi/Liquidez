@@ -311,6 +311,13 @@ async def CriaRelatorioPDF(dados_fundo):
         await page.pdf(path=pdf_path)
         await browser.close()
 
+        # --- LIMPEZA DO ARQUIVO TEMPORÁRIO ---
+        if os.path.exists(html_path):
+            try:
+                os.remove(html_path)
+            except Exception as e:
+                print(f"Erro ao tentar excluir HTML temporário: {e}")
+
 if __name__ == "__main__":  
     
     # Abre conexao SQL
