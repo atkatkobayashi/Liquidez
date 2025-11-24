@@ -466,7 +466,7 @@ if __name__ == "__main__":
             PathImgDiasLiquidarAtivo = "../../../Reports/aux_files/img/ativo_dias_liquidar_" + str(fundo_id) + "_" + data_base.strftime("%Y-%m-%d").replace("-", "") + ".png"
 
             CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress, TabelaALM_Formatada)
-            asyncio.get_event_loop().run_until_complete(CriaRelatorioPDF(dados_fundo))
+            asyncio.run(CriaRelatorioPDF(dados_fundo))
         
             # CHECK DE PL
             # SQL Injection Fix: Usando parâmetros %s
