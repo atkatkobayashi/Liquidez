@@ -38,6 +38,62 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 
+
+def CheckLiquidezResgates(FluxoAtivos, ResgatesFuturos, data_base, df_dias_uteis):
+    """
+    Verifica se a liquidez dos ativos cobre os resgates nas datas de pagamento.
+    """
+    import pandas as pd
+    
+    # --- 1. PREPARAR O PASSIVO (Resgates) ---
+    df_passivo = ResgatesFuturos.copy()
+    df_passivo['data_liquidacao'] = pd.to_datetime(df_passivo['data_liquidacao'])
+    fluxo_passivo = df_passivo.groupby('data_liquidacao')['vl_bruto'].sum().reset_index()
+    fluxo_passivo.columns = ['data', 'resgate_dia']
+    
+    # --- 2. PREPARAR O ATIVO (Liquidez) ---
+    target_date = pd.to_datetime(data_base)
+    df_dias_uteis['Data Base'] = pd.to_datetime(df_dias_uteis['Data Base'])
+    
+    try:
+        idx_inicio = df_dias_uteis[df_dias_uteis['Data Base'] == target_date].index[0]
+    except IndexError:
+        print(f"Erro Crítico: Data Base {data_base} não encontrada na tabela de dias úteis.")
+        return None, pd.DataFrame()
+
+    def get_data_liquidacao(dias):
+        target_idx = idx_inicio + int(dias)
+        if target_idx < len(df_dias_uteis):
+            return df_dias_uteis.loc[target_idx, 'Data Base']
+        else:
+            return df_dias_uteis.iloc[-1]['Data Base']
+
+    df_ativo = FluxoAtivos.copy()
+    df_ativo['data_disponivel'] = df_ativo['dias_liquidar'].apply(get_data_liquidacao)
+    
+    fluxo_ativo = df_ativo.groupby('data_disponivel')['vl_financeiro'].sum().reset_index()
+    fluxo_ativo.columns = ['data', 'liquidez_dia']
+    
+    # --- 3. CONSOLIDAR E COMPARAR (CORREÇÃO DO WARNING AQUI) ---
+    df_alm = pd.merge(fluxo_passivo, fluxo_ativo, on='data', how='outer')
+    
+    # Correção: infere os tipos corretos antes de preencher com 0 para evitar o FutureWarning
+    df_alm = df_alm.infer_objects(copy=False).fillna(0)
+    
+    df_alm = df_alm.sort_values('data')
+    
+    # Filtra apenas datas futuras
+    df_alm = df_alm[df_alm['data'] >= target_date]
+
+    df_alm['resgate_acumulado'] = df_alm['resgate_dia'].cumsum()
+    df_alm['liquidez_acumulada'] = df_alm['liquidez_dia'].cumsum()
+    df_alm['sobra_caixa'] = df_alm['liquidez_acumulada'] - df_alm['resgate_acumulado']
+    
+    # Tolerância de centavos para evitar falsos negativos por arredondamento
+    passou_no_check = df_alm['sobra_caixa'].min() >= -0.01 
+    
+    return passou_no_check, df_alm
+
 def GraficoPercMedioResgates(c, fundo_id, data_base):
 
     AgregarPercMedioResgateHistList.columns = AgregarPercMedioResgateHistList.columns.astype(str)
@@ -332,6 +388,43 @@ if __name__ == "__main__":
             FluxoAtivosFundo = pd.DataFrame(cursor.fetchall(), columns = ['data_fluxo', 'tipo_fluxo', 'DU', 'VP', 'posicao_qtde', 'nome', 'fundo_id', 'liquidez', 'emissor', 'veiculo',  'vl_financeiro', 'perc_pl', 'dias_liquidar', 'perc_fluxo_ativo', 'data_base', 'VF'])
                     
             #FluxoAtivosFundo = FluxoAtivosFundo[['data_fluxo', 'tipo_fluxo', 'DU', 'VP', 'posicao_qtde', 'nome', 'fundo_id', 'liquidez', 'emissor', 'veiculo',  'vl_financeiro', 'perc_pl', 'dias_liquidar', 'perc_fluxo_ativo', 'data_base', 'VF']]
+
+            # --- NOVO CHECK DE LIQUIDEZ ---
+            print("Verificando Casamento de Liquidez...")
+            # Chama a função
+            check_status, df_alm_detalhe = CheckLiquidezResgates(FluxoAtivosFundo, ResgatesFuturos, data_base, df_dias_uteis)
+            
+            if check_status is None:
+                # Caso de Erro Técnico (Data não encontrada)
+                print(f"⚠️ PULA CHECK: Não foi possível calcular ALM para o fundo {fundo_id} (Verifique tabela de dias úteis).")
+                
+            elif check_status is False:
+                # Caso de Falta de Liquidez Real
+                print(f"❌ ALERTA DE LIQUIDEZ: Fundo {fundo_id} possui descasamento de fluxo!")
+                
+                # Só acessa as colunas se o DataFrame não estiver vazio
+                if not df_alm_detalhe.empty and 'sobra_caixa' in df_alm_detalhe.columns:
+                    dias_problematicos = df_alm_detalhe[df_alm_detalhe['sobra_caixa'] < 0]
+                    print("Dias com insuficiência de caixa:")
+                    print(dias_problematicos[['data', 'resgate_acumulado', 'liquidez_acumulada', 'sobra_caixa']].head(3))
+                    
+                    logging.warning(f"Fundo {fundo_id}: Liquidez insuficiente.\n{dias_problematicos.head(1)}")
+            else:
+                # Caso Sucesso
+                print(f"✅ Check de Liquidez OK: Ativos cobrem todos os resgates futuros.")
+
+            if check_status is not None:
+                # 1. EXPORTAR DETALHE PARA EXCEL
+                nome_arquivo_alm = f"ALM_Detalhado_{fundo_id}_{data_base}.xlsx"
+                
+                # Seleciona e renomeia colunas para ficar mais claro no Excel
+                df_export = df_alm_detalhe[['data', 'resgate_dia', 'liquidez_dia', 'resgate_acumulado', 'liquidez_acumulada', 'sobra_caixa']].copy()
+                df_export.columns = ['Data', 'Resgate do Dia', 'Liquidez do Dia', 'Resgate Acumulado (Passivo)', 'Liquidez Acumulada (Ativo)', 'Sobra de Caixa']
+                
+                # Salva o arquivo
+                df_export.to_excel(nome_arquivo_alm, index=False)
+                print(f"   -> Detalhe do ALM salvo em: {nome_arquivo_alm}")
+                
             GraficoAtivoDiasLiquidar(cursor, fundo_id, data_base)
             FluxoAtivosFundo.to_excel(str(fundo_id) + '.xlsx')
 
