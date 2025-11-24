@@ -6,6 +6,9 @@
 
 # 3. Mas NÃO ignorar arquivos que terminam em .py
 !*.py
+!*.log
+!report_file_template.html
+!logo.png
 
 # 4. Recomendado: Não ignorar o próprio arquivo .gitignore (para salvar essas regras)
 !.gitignore

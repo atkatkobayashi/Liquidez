@@ -1,0 +1,496 @@
+2025-11-24 11:30:12,175 - root - ERROR - Erro ao processar fundo 13151: name 'pl_calculado' is not defined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 339, in <module>
+    print("PL Diferença: " + format_currency(dados_fundo['pl_fundo'] - pl_calculado - pl_despesas, '', locale='es_CO'))
+                                                                       ^^^^^^^^^^^^
+NameError: name 'pl_calculado' is not defined
+
+2025-11-24 11:30:14,719 - root - ERROR - Erro ao processar fundo 13152: name 'pl_calculado' is not defined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 339, in <module>
+    print("PL Diferença: " + format_currency(dados_fundo['pl_fundo'] - pl_calculado - pl_despesas, '', locale='es_CO'))
+                                                                       ^^^^^^^^^^^^
+NameError: name 'pl_calculado' is not defined
+
+2025-11-24 11:30:17,503 - root - ERROR - Erro ao processar fundo 16778: name 'pl_calculado' is not defined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 339, in <module>
+    print("PL Diferença: " + format_currency(dados_fundo['pl_fundo'] - pl_calculado - pl_despesas, '', locale='es_CO'))
+                                                                       ^^^^^^^^^^^^
+NameError: name 'pl_calculado' is not defined
+
+2025-11-24 11:30:20,567 - root - ERROR - Erro ao processar fundo PAVA: name 'pl_calculado' is not defined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 339, in <module>
+    print("PL Diferença: " + format_currency(dados_fundo['pl_fundo'] - pl_calculado - pl_despesas, '', locale='es_CO'))
+                                                                       ^^^^^^^^^^^^
+NameError: name 'pl_calculado' is not defined
+
+2025-11-24 11:31:29,831 - root - ERROR - Erro ao processar fundo 13151: name 'pl_calculado' is not defined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 339, in <module>
+    print("PL Diferença: " + format_currency(dados_fundo['pl_fundo'] - pl_calculado - pl_despesas, '', locale='es_CO'))
+                                                                       ^^^^^^^^^^^^
+NameError: name 'pl_calculado' is not defined
+
+2025-11-24 11:31:32,726 - root - ERROR - Erro ao processar fundo 13152: name 'pl_calculado' is not defined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 339, in <module>
+    print("PL Diferença: " + format_currency(dados_fundo['pl_fundo'] - pl_calculado - pl_despesas, '', locale='es_CO'))
+                                                                       ^^^^^^^^^^^^
+NameError: name 'pl_calculado' is not defined
+
+2025-11-24 11:31:37,445 - root - ERROR - Erro ao processar fundo 16778: name 'pl_calculado' is not defined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 339, in <module>
+    print("PL Diferença: " + format_currency(dados_fundo['pl_fundo'] - pl_calculado - pl_despesas, '', locale='es_CO'))
+                                                                       ^^^^^^^^^^^^
+NameError: name 'pl_calculado' is not defined
+
+2025-11-24 11:31:41,017 - root - ERROR - Erro ao processar fundo PAVA: name 'pl_calculado' is not defined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 339, in <module>
+    print("PL Diferença: " + format_currency(dados_fundo['pl_fundo'] - pl_calculado - pl_despesas, '', locale='es_CO'))
+                                                                       ^^^^^^^^^^^^
+NameError: name 'pl_calculado' is not defined
+
+2025-11-24 11:31:43,716 - root - ERROR - Erro ao processar fundo 14586: name 'pl_calculado' is not defined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 339, in <module>
+    print("PL Diferença: " + format_currency(dados_fundo['pl_fundo'] - pl_calculado - pl_despesas, '', locale='es_CO'))
+                                                                       ^^^^^^^^^^^^
+NameError: name 'pl_calculado' is not defined
+
+2025-11-24 11:31:46,486 - root - ERROR - Erro ao processar fundo 16029: name 'pl_calculado' is not defined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 339, in <module>
+    print("PL Diferença: " + format_currency(dados_fundo['pl_fundo'] - pl_calculado - pl_despesas, '', locale='es_CO'))
+                                                                       ^^^^^^^^^^^^
+NameError: name 'pl_calculado' is not defined
+
+2025-11-24 11:31:49,242 - root - ERROR - Erro ao processar fundo 19019: name 'pl_calculado' is not defined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 339, in <module>
+    print("PL Diferença: " + format_currency(dados_fundo['pl_fundo'] - pl_calculado - pl_despesas, '', locale='es_CO'))
+                                                                       ^^^^^^^^^^^^
+NameError: name 'pl_calculado' is not defined
+
+2025-11-24 11:31:51,753 - root - ERROR - Erro ao processar fundo 14353: name 'pl_calculado' is not defined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 339, in <module>
+    print("PL Diferença: " + format_currency(dados_fundo['pl_fundo'] - pl_calculado - pl_despesas, '', locale='es_CO'))
+                                                                       ^^^^^^^^^^^^
+NameError: name 'pl_calculado' is not defined
+
+2025-11-24 11:31:54,783 - root - ERROR - Erro ao processar fundo 22597: name 'pl_calculado' is not defined
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 339, in <module>
+    print("PL Diferença: " + format_currency(dados_fundo['pl_fundo'] - pl_calculado - pl_despesas, '', locale='es_CO'))
+                                                                       ^^^^^^^^^^^^
+NameError: name 'pl_calculado' is not defined
+
+2025-11-24 11:36:28,962 - root - ERROR - Erro ao processar fundo 13151: 'str' object has no attribute 'strftime'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 424, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 224, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 58, in top-level template code
+    <tr><td>{{ value['cenario'] }} ({{ value['valor_cenario'][0][0] | date_format }})</td><td class='td_center'>{{ (value['valor_cenario'][0][1] * 100) | commafy }}%</td><td class='td_center'>{{ value['situacao_cenario'] }}</td></tr>
+    
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 216, in date_format
+    return value.strftime("%d/%m/%Y")
+           ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'strftime'
+
+2025-11-24 11:36:31,512 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:36:31,845 - root - ERROR - Erro ao processar fundo 13152: 'str' object has no attribute 'strftime'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 424, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 224, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 58, in top-level template code
+    <tr><td>{{ value['cenario'] }} ({{ value['valor_cenario'][0][0] | date_format }})</td><td class='td_center'>{{ (value['valor_cenario'][0][1] * 100) | commafy }}%</td><td class='td_center'>{{ value['situacao_cenario'] }}</td></tr>
+    
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 216, in date_format
+    return value.strftime("%d/%m/%Y")
+           ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'strftime'
+
+2025-11-24 11:36:35,636 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:36:35,701 - root - ERROR - Erro ao processar fundo 16778: 'str' object has no attribute 'strftime'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 424, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 224, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 58, in top-level template code
+    <tr><td>{{ value['cenario'] }} ({{ value['valor_cenario'][0][0] | date_format }})</td><td class='td_center'>{{ (value['valor_cenario'][0][1] * 100) | commafy }}%</td><td class='td_center'>{{ value['situacao_cenario'] }}</td></tr>
+    
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 216, in date_format
+    return value.strftime("%d/%m/%Y")
+           ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'strftime'
+
+2025-11-24 11:36:40,089 - root - ERROR - Erro ao processar fundo PAVA: 'str' object has no attribute 'strftime'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 424, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 224, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 58, in top-level template code
+    <tr><td>{{ value['cenario'] }} ({{ value['valor_cenario'][0][0] | date_format }})</td><td class='td_center'>{{ (value['valor_cenario'][0][1] * 100) | commafy }}%</td><td class='td_center'>{{ value['situacao_cenario'] }}</td></tr>
+    
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 216, in date_format
+    return value.strftime("%d/%m/%Y")
+           ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'strftime'
+
+2025-11-24 11:36:43,711 - root - ERROR - Erro ao processar fundo 14586: 'str' object has no attribute 'strftime'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 424, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 224, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 58, in top-level template code
+    <tr><td>{{ value['cenario'] }} ({{ value['valor_cenario'][0][0] | date_format }})</td><td class='td_center'>{{ (value['valor_cenario'][0][1] * 100) | commafy }}%</td><td class='td_center'>{{ value['situacao_cenario'] }}</td></tr>
+    
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 216, in date_format
+    return value.strftime("%d/%m/%Y")
+           ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'strftime'
+
+2025-11-24 11:36:47,198 - root - ERROR - Erro ao processar fundo 16029: 'str' object has no attribute 'strftime'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 424, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 224, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 58, in top-level template code
+    <tr><td>{{ value['cenario'] }} ({{ value['valor_cenario'][0][0] | date_format }})</td><td class='td_center'>{{ (value['valor_cenario'][0][1] * 100) | commafy }}%</td><td class='td_center'>{{ value['situacao_cenario'] }}</td></tr>
+    
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 216, in date_format
+    return value.strftime("%d/%m/%Y")
+           ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'strftime'
+
+2025-11-24 11:36:50,493 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:36:50,559 - root - ERROR - Erro ao processar fundo 19019: 'str' object has no attribute 'strftime'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 424, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 224, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 58, in top-level template code
+    <tr><td>{{ value['cenario'] }} ({{ value['valor_cenario'][0][0] | date_format }})</td><td class='td_center'>{{ (value['valor_cenario'][0][1] * 100) | commafy }}%</td><td class='td_center'>{{ value['situacao_cenario'] }}</td></tr>
+    
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 216, in date_format
+    return value.strftime("%d/%m/%Y")
+           ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'strftime'
+
+2025-11-24 11:36:53,212 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:36:53,274 - root - ERROR - Erro ao processar fundo 14353: 'str' object has no attribute 'strftime'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 424, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 224, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 58, in top-level template code
+    <tr><td>{{ value['cenario'] }} ({{ value['valor_cenario'][0][0] | date_format }})</td><td class='td_center'>{{ (value['valor_cenario'][0][1] * 100) | commafy }}%</td><td class='td_center'>{{ value['situacao_cenario'] }}</td></tr>
+    
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 216, in date_format
+    return value.strftime("%d/%m/%Y")
+           ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'strftime'
+
+2025-11-24 11:36:56,873 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:36:56,935 - root - ERROR - Erro ao processar fundo 22597: 'str' object has no attribute 'strftime'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 424, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 224, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 58, in top-level template code
+    <tr><td>{{ value['cenario'] }} ({{ value['valor_cenario'][0][0] | date_format }})</td><td class='td_center'>{{ (value['valor_cenario'][0][1] * 100) | commafy }}%</td><td class='td_center'>{{ value['situacao_cenario'] }}</td></tr>
+    
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 216, in date_format
+    return value.strftime("%d/%m/%Y")
+           ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'strftime'
+
+2025-11-24 11:41:26,874 - root - ERROR - Erro ao processar fundo 13151: 'str' object has no attribute 'strftime'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 424, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 224, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 58, in top-level template code
+    <tr><td>{{ value['cenario'] }} ({{ value['valor_cenario'][0][0] | date_format }})</td><td class='td_center'>{{ (value['valor_cenario'][0][1] * 100) | commafy }}%</td><td class='td_center'>{{ value['situacao_cenario'] }}</td></tr>
+    
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 216, in date_format
+    return value.strftime("%d/%m/%Y")
+           ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'strftime'
+
+2025-11-24 11:41:29,740 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:41:29,828 - root - ERROR - Erro ao processar fundo 13152: 'str' object has no attribute 'strftime'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 424, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 224, in CriaRelatorio
+    outputText = template.render(dados_fundo = dados_fundo, PathImgLogo = PathImgLogo, PathImgDiasLiquidarAtivo = PathImgDiasLiquidarAtivo, PathImgPercMedioResgates = PathImgPercMedioResgates, InfoConcentracaoPassivo = InfoConcentracaoPassivo,
+        ResgatesFuturos = ResgatesFuturos, PosicaoMargemFundo = PosicaoMargemFundo, AgregarAtivoPassivoList = AgregarAtivoPassivoList, InfoCotistaParticipacaoRelevante = InfoCotistaParticipacaoRelevante, limite_maximo_cotista = limite_maximo_cotista,
+        CenariosStress = CenariosStress)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "Reports\ReportFiles\report_file_template.html", line 58, in top-level template code
+    <tr><td>{{ value['cenario'] }} ({{ value['valor_cenario'][0][0] | date_format }})</td><td class='td_center'>{{ (value['valor_cenario'][0][1] * 100) | commafy }}%</td><td class='td_center'>{{ value['situacao_cenario'] }}</td></tr>
+    
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 216, in date_format
+    return value.strftime("%d/%m/%Y")
+           ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'strftime'
+
+2025-11-24 11:44:17,096 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:44:23,369 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:44:49,527 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:44:54,378 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:55:36,851 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:55:44,858 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:56:12,165 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:56:18,071 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:56:20,412 - root - ERROR - Erro ao processar fundo 14353: [Errno 13] Permission denied: 'Reports\\ReportFiles\\pdf_files\\20251119_14353.pdf'
+Traceback (most recent call last):
+  File "r:\Quant\DailyRoutines\Liquidez\main.py", line 438, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "r:\Quant\DailyRoutines\Liquidez\main.py", line 255, in CriaRelatorioPDF
+    await page.pdf(path=pdf_path)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\playwright\async_api\_generated.py", line 11604, in pdf
+    await self._impl_obj.pdf(
+    ...<15 lines>...
+    )
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_page.py", line 1138, in pdf
+    await async_writefile(path, decoded_binary)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_helper.py", line 405, in async_writefile
+    await loop.run_in_executor(None, inner)
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_helper.py", line 401, in inner
+    with open(file, "w" if isinstance(data, str) else "wb") as fh:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'Reports\\ReportFiles\\pdf_files\\20251119_14353.pdf'
+
+2025-11-24 11:56:24,330 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:56:26,743 - root - ERROR - Erro ao processar fundo 22597: [Errno 13] Permission denied: 'Reports\\ReportFiles\\pdf_files\\20251119_22597.pdf'
+Traceback (most recent call last):
+  File "r:\Quant\DailyRoutines\Liquidez\main.py", line 438, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\asyncio\base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "r:\Quant\DailyRoutines\Liquidez\main.py", line 255, in CriaRelatorioPDF
+    await page.pdf(path=pdf_path)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\playwright\async_api\_generated.py", line 11604, in pdf
+    await self._impl_obj.pdf(
+    ...<15 lines>...
+    )
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_page.py", line 1138, in pdf
+    await async_writefile(path, decoded_binary)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_helper.py", line 405, in async_writefile
+    await loop.run_in_executor(None, inner)
+  File "C:\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_helper.py", line 401, in inner
+    with open(file, "w" if isinstance(data, str) else "wb") as fh:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'Reports\\ReportFiles\\pdf_files\\20251119_22597.pdf'
+
+2025-11-24 11:57:11,843 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:57:17,592 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:57:38,683 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:57:43,442 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:57:48,186 - root - ERROR - Erro ao verificar suficiência de liquidez: 'dias_uteis'
+2025-11-24 11:59:05,459 - root - ERROR - Erro ao verificar suficiência de liquidez: name 'df_dias_uteis' is not defined
+2025-11-24 11:59:10,680 - root - ERROR - Erro ao verificar suficiência de liquidez: name 'df_dias_uteis' is not defined
+2025-11-24 11:59:16,511 - root - ERROR - Erro ao verificar suficiência de liquidez: name 'df_dias_uteis' is not defined
+2025-11-24 11:59:23,252 - root - ERROR - Erro ao verificar suficiência de liquidez: name 'df_dias_uteis' is not defined
+2025-11-24 11:59:28,815 - root - ERROR - Erro ao verificar suficiência de liquidez: name 'df_dias_uteis' is not defined
+2025-11-24 11:59:34,172 - root - ERROR - Erro ao verificar suficiência de liquidez: name 'df_dias_uteis' is not defined
+2025-11-24 11:59:39,736 - root - ERROR - Erro ao verificar suficiência de liquidez: name 'df_dias_uteis' is not defined
+2025-11-24 11:59:45,031 - root - ERROR - Erro ao verificar suficiência de liquidez: name 'df_dias_uteis' is not defined
+2025-11-24 11:59:50,788 - root - ERROR - Erro ao verificar suficiência de liquidez: name 'df_dias_uteis' is not defined
+2025-11-24 12:02:22,603 - root - ERROR - Erro ao processar fundo 13151: './Reports/ReportFiles/report_file_template.html' not found in search path: './'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 359, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 222, in CriaRelatorio
+    template = templateEnv.get_template(TEMPLATE_FILE)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\loaders.py", line 209, in get_source
+    raise TemplateNotFound(
+    ...<2 lines>...
+    )
+jinja2.exceptions.TemplateNotFound: './Reports/ReportFiles/report_file_template.html' not found in search path: './'
+
+2025-11-24 12:02:25,528 - root - ERROR - Erro ao processar fundo 13152: './Reports/ReportFiles/report_file_template.html' not found in search path: './'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 359, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 222, in CriaRelatorio
+    template = templateEnv.get_template(TEMPLATE_FILE)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\loaders.py", line 209, in get_source
+    raise TemplateNotFound(
+    ...<2 lines>...
+    )
+jinja2.exceptions.TemplateNotFound: './Reports/ReportFiles/report_file_template.html' not found in search path: './'
+
+2025-11-24 12:02:31,789 - root - ERROR - Erro ao processar fundo 16778: './Reports/ReportFiles/report_file_template.html' not found in search path: './'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 359, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 222, in CriaRelatorio
+    template = templateEnv.get_template(TEMPLATE_FILE)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\loaders.py", line 209, in get_source
+    raise TemplateNotFound(
+    ...<2 lines>...
+    )
+jinja2.exceptions.TemplateNotFound: './Reports/ReportFiles/report_file_template.html' not found in search path: './'
+
+2025-11-24 12:02:36,321 - root - ERROR - Erro ao processar fundo PAVA: './Reports/ReportFiles/report_file_template.html' not found in search path: './'
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 359, in <module>
+    CriaRelatorio(dados_fundo, PathImgLogo, PathImgDiasLiquidarAtivo, PathImgPercMedioResgates, InfoConcentracaoPassivo, InfoCotistaParticipacaoRelevante, limite_maximo_cotista, ResgatesFuturos, PosicaoMargemFundo, AgregarAtivoPassivoList, CenariosStress)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 222, in CriaRelatorio
+    template = templateEnv.get_template(TEMPLATE_FILE)
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andrekobayashi\AppData\Roaming\Python\Python313\site-packages\jinja2\loaders.py", line 209, in get_source
+    raise TemplateNotFound(
+    ...<2 lines>...
+    )
+jinja2.exceptions.TemplateNotFound: './Reports/ReportFiles/report_file_template.html' not found in search path: './'
+

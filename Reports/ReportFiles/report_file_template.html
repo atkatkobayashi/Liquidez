@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Liquidity Report</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container_header">
+            <div id="info_fundo">
+                <p><label>Data Base: </label><span>{{dados_fundo['data_base'] | date_format}}</span></p>
+                <p><label>Nome Fundo: </label><span>{{dados_fundo['nome_fundo']}}</span></p>
+                <p><label>PL (R$): </label><span>{{dados_fundo['pl_fundo'] | commafy}}</span></p>
+                <p><label>Cotizacao: </label><span>{{dados_fundo['cotizacao_fundo_dc']}}
+                        d.c.</span><span>({{dados_fundo['cotizacao_fundo_du']}} d.u.)</span></p>
+                <p><label>Liquidacao: </label><span>{{dados_fundo['liquidacao_fundo']}}</span></p>
+            </div>
+
+            <div id="RafterLogo"><img src={{PathImgLogo}}></div>
+
+        </div>
+        <div class="content">
+            <div class="content_left">
+                <div id="Enquadramento">
+                    <fieldset>
+                        <legend>Enquadramento</legend>
+                        <table>
+                            {% set perc_total = AgregarAtivoPassivoList.loc[AgregarAtivoPassivoList['janela'] ==
+                            dados_fundo['janela_liquidez_passivo'], 'passivo'].item() +
+                            ResgatesFuturos['vl_bruto'].sum() / dados_fundo['pl_fundo'] +
+                            (PosicaoMargemFundo['fin_depositado']).sum() / dados_fundo['pl_fundo'] +
+                            InfoCotistaParticipacaoRelevante['excesso_limite'].sum()%}
+
+                            <tr>
+                                <td>Percentual Medio Resgate (Janela Passivo = {{ dados_fundo['janela_liquidez_passivo']
+                                    }})</td>
+                                <td class='td_center'>{{ (AgregarAtivoPassivoList.loc[AgregarAtivoPassivoList['janela']
+                                    == dados_fundo['janela_liquidez_passivo'], 'passivo'].item() * 100.0) | commafy }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>(+) Resgates Agendados</td>
+                                <td class='td_center'>{{ (ResgatesFuturos['vl_bruto'].sum() / dados_fundo['pl_fundo'] *
+                                    100) | commafy }}</td>
+                            </tr>
+                            <tr>
+                                <td>(+) Margem Alocada</td>
+                                <td class='td_center'>{{ ((PosicaoMargemFundo['fin_depositado']).sum() /
+                                    dados_fundo['pl_fundo'] * 100)| commafy }}</td>
+                            </tr>
+                            <tr>
+                                <td>(+) Excesso Participacao Cotista</td>
+                                <td class='td_center'>{{ (InfoCotistaParticipacaoRelevante['excesso_limite'].sum() *
+                                    100) | commafy }}</td>
+                            </tr>
+                            <tr>
+                                <th>Liquidez Minima</th>
+                                <th class='td_center'>{{ (perc_total * 100) | commafy }}</th>
+                            </tr>
+                            <tr>
+                                <td>Liquidez Atual Fundo (Janela Ativo = {{dados_fundo['cotizacao_fundo_du']}})</td>
+                                <td class='td_center'>{{ (AgregarAtivoPassivoList.loc[AgregarAtivoPassivoList['janela']
+                                    == dados_fundo['janela_liquidez_ativo'], 'ativo'].item() * 100.0) | commafy }}</td>
+                            </tr>
+
+
+
+                        </table>
+                    </fieldset>
+                </div>
+                <div id="StressAnalise">
+                    <fieldset>
+                        <legend>Analise - Stress</legend>
+                        <table>
+                            <tr>
+                                <th>Cenário</th>
+                                <th>Valor</th>
+                                <th>Situação</th>
+                            </tr>
+                            {% for key,value in CenariosStress.iterrows() %}
+                            {% if value['valor_cenario'] is string %}
+                            <tr>
+                                <td>{{ value['cenario'] }}</td>
+                                <td class='td_center'>{{ value['valor_cenario'] }}</td>
+                                <td class='td_center'>{{ value['situacao_cenario'] }}</td>
+                            </tr>
+                            {% elif value['valor_cenario'][0][0] is not none %}
+                            <tr>
+                                <td>{{ value['cenario'] }} ({{ value['valor_cenario'][0][0] | date_format }})</td>
+                                <td class='td_center'>{{ (value['valor_cenario'][0][1] * 100) | commafy }}%</td>
+                                <td class='td_center'>{{ value['situacao_cenario'] }}</td>
+                            </tr>
+                            {% endif %}
+                            {% endfor %}
+
+                        </table>
+                    </fieldset>
+                </div>
+                <div id="ResgatesFuturos">
+                    <fieldset>
+                        <legend>Resgates Agendados</legend>
+                        <table>
+                            <tr>
+                                <th>Data Cotizacao</th>
+                                <th>Data Liquidacao</th>
+                                <th>Cotista</th>
+                                <th>Valor Bruto</th>
+                                <th>Tipo</th>
+                                <th>(%) PL</th>
+                            </tr>
+
+                            {% if ResgatesFuturos | length == 0 %}
+                            <tr>
+                                <td colspan='6' class='td_center'>Sem Resgates Agendados</td>
+                            </tr>
+                            {% else %}
+                            {% for key,value in ResgatesFuturos.iterrows() %}
+                            <tr>
+                                <td class='td_center'>{{value['data_cotizacao'] | date_format}}</td>
+                                <td class='td_center'>{{value['data_liquidacao'] | date_format}}</td>
+                                <td class='td_center'>{{value['cotista']}}</td>
+                                <td class='td_center'>{{value['vl_bruto'] | commafy}} </td>
+                                <td class='td_center'>{{value['tipo_movimento']}}</td>
+                                <td class='td_center'>{{(value['vl_bruto'] / dados_fundo['pl_fundo'] * 100) | commafy}}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                            <tr class='total_row'>
+                                <td class='td_center' colspan='3'>Total</td>
+                                <td class='td_center'>{{ ResgatesFuturos['vl_bruto'].sum() | commafy }}</td>
+                                <td></td>
+                                <td class='td_center'>{{ (ResgatesFuturos['vl_bruto'].sum() / dados_fundo['pl_fundo'] *
+                                    100) | commafy }}</td>
+                            </tr>
+                            {% endif %}
+
+
+                        </table>
+                    </fieldset>
+                </div>
+                <div id="MargemAlocada">
+                    <fieldset>
+                        <legend>Margem Alocada</legend>
+                        <table>
+                            <tr>
+                                <th>Ativo</th>
+                                <th>Vencimento</th>
+                                <th>Qtde. Depositada</th>
+                                <th>Financeiro Depositado</th>
+                                <th>(%) PL</th>
+                            </tr>
+                            {% if PosicaoMargemFundo | length == 0 %}
+                            <tr>
+                                <td colspan='6' class='td_center'>Sem Margem Alocada</td>
+                            </tr>
+                            {% else %}
+                            {% for key,value in PosicaoMargemFundo.iterrows() %}
+                            <tr>
+                                <td class='td_center'>{{value['ativo']}}</td>
+                                <td class='td_center'>{{value['vencimento'] | date_format}}</td>
+                                <td class='td_center'>{{value['qtde_margem'] | commafy}}</td>
+                                <td class='td_center'>{{(value['fin_depositado']) | commafy}}</td>
+                                <td class='td_center'>{{(value['fin_depositado'] / dados_fundo['pl_fundo'] * 100) |
+                                    commafy}} </td>
+                            </tr>
+                            {% endfor %}
+                            <tr class='total_row'>
+                                <td class='td_center' colspan='3'>Total</td>
+                                <td class='td_center'>{{ (PosicaoMargemFundo['fin_depositado']).sum() | commafy }}</td>
+                                <td class='td_center'>{{ ((PosicaoMargemFundo['fin_depositado']).sum() /
+                                    dados_fundo['pl_fundo'] * 100)| commafy }}</td>
+                            </tr>
+                            {% endif %}
+
+
+                        </table>
+                    </fieldset>
+                </div>
+
+            </div>
+            <div class="content_right">
+
+                <div id="InfoConcentracaoPassivo">
+                    <fieldset>
+                        <legend>Perfil Passivo</legend>
+                        <table>
+                            <tr>
+                                <td><label>Quantidade Cotistas: </label></td>
+                                <td class='td_center'>{{InfoConcentracaoPassivo['QtdeCotistas']}}</td>
+                            </tr>
+                            <tr>
+                                <td><label>Maior Cotista: </label></td>
+                                <td class='td_center'>{{(InfoConcentracaoPassivo['Part1MaiorCotista'] * 100) |
+                                    commafy}}%</td>
+                            </tr>
+                            <tr>
+                                <td><label>3 Maiores Cotistas: </label></td>
+                                <td class='td_center'>{{(InfoConcentracaoPassivo['Part3MaiorCotista'] * 100) |
+                                    commafy}}%</td>
+                            </tr>
+                            <tr>
+                                <td><label>5 Maiores Cotistas: </label></td>
+                                <td class='td_center'>{{(InfoConcentracaoPassivo['Part5MaiorCotista'] * 100) |
+                                    commafy}}%</td>
+                            </tr>
+                            <tr>
+                                <td><label>10 Maiores Cotistas: </label></td>
+                                <td class='td_center'>{{(InfoConcentracaoPassivo['Part10MaiorCotista'] * 100) |
+                                    commafy}}%</td>
+                            </tr>
+                            <tr>
+                                <td><label>25 Maiores Cotistas: </label></td>
+                                <td class='td_center'>{{(InfoConcentracaoPassivo['Part25MaiorCotista'] * 100) |
+                                    commafy}}%</td>
+                            </tr>
+
+                        </table>
+                    </fieldset>
+                </div>
+                <div id="GraficoPercMedioResgates">
+                    <img src={{PathImgPercMedioResgates}} width="100%" height="100%">
+                </div>
+                <div id="GraficoDiasLiquidarAtivo">
+                    <img src={{PathImgDiasLiquidarAtivo}} width="100%" height="100%">
+                </div>
+                <div id="AtivoPassivo">
+                    <fieldset>
+                        <legend>Percentual Ativo e Passivo - Janela</legend>
+                        <table>
+                            <tr>
+                                <th>Janela</th>
+                                {% for key,value in AgregarAtivoPassivoList.iterrows() %}
+                                <th class="td_center"> {{value['janela'] | int}} </th>
+                                {% endfor %}
+                            </tr>
+                            <tr>
+                                <td class="td_center">Ativo</td>
+                                {% for key,value in AgregarAtivoPassivoList.iterrows() %}
+                                <td class="td_center"> {{ (value['ativo'] * 100) | commafy }} </td>
+                                {% endfor %}
+                            </tr>
+                            <tr>
+                                <td class="td_center">Passivo</td>
+                                {% for key,value in AgregarAtivoPassivoList.iterrows() %}
+                                <td class="td_center"> {{ (value['passivo'] * 100) | commafy }} </td>
+                                {% endfor %}
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                </div>
+                <div id="LimiteMaximoConcentracaoCotista">
+                    <fieldset>
+                        <legend>Limite Maximo Concentracao Cotista ({{ (limite_maximo_cotista * 100) | commafy }}%)
+                        </legend>
+                        <table>
+                            <tr>
+                                <th>Cotista</th>
+                                <th>Participacao Passivo</th>
+                                <th>Excesso Participacao</th>
+                            </tr>
+                            {% if InfoCotistaParticipacaoRelevante | length == 0 %}
+                            <tr>
+                                <td colspan='3' class='td_center'>Nenhum cotista acima da concentracao limite.</td>
+                            </tr>
+                            {% else %}
+                            {% for key,value in InfoCotistaParticipacaoRelevante.iterrows() %}
+                            <tr>
+                                <td class="td_center"> {{ (value['cotista']) }} </td>
+                                <td class="td_center"> {{ (value['part_perc'] * 100) | commafy }} </td>
+                                <td class="td_center"> {{ (value['excesso_limite'] * 100) | commafy }} </td>
+                            </tr>
+                            {% endfor %}
+                            <tr class='total_row'>
+                                <td class='td_center' colspan='2'>Total</td>
+                                <td class='td_center'>{{ (InfoCotistaParticipacaoRelevante['excesso_limite'].sum() *
+                                    100) | commafy }}</td>
+                            </tr>
+                            {% endif %}
+
+                        </table>
+                    </fieldset>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

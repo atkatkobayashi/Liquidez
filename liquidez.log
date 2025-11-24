@@ -1,0 +1,17 @@
+2025-01-07 10:44:10,111 - ERROR - Erro crítico durante execução
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 188, in main
+    data_base = datetime.strptime(data_base, '%Y-%m-%d').date()
+                ^^^^^^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'strptime'
+2025-01-07 10:44:10,115 - INFO - Processo finalizado
+2025-01-07 10:45:09,556 - INFO - Conexão com banco de dados estabelecida
+2025-01-07 10:45:09,557 - INFO - Processando fundo 13151
+2025-01-07 10:45:09,559 - INFO - Conexões com banco de dados fechadas
+2025-01-07 10:45:09,560 - ERROR - Erro crítico durante execução
+Traceback (most recent call last):
+  File "R:\Quant\DailyRoutines\Liquidez\main.py", line 198, in main
+    report.generate_report(fundo_id, data_base)
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'LiquidezReport' object has no attribute 'generate_report'
+2025-01-07 10:45:09,563 - INFO - Processo finalizado
