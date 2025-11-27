@@ -400,27 +400,19 @@ if __name__ == "__main__":
             print("Verificando Casamento de Liquidez...")
             # Chama a função
             check_status, df_alm_detalhe = CheckLiquidezResgates(FluxoAtivosFundo, ResgatesFuturos, data_base, df_dias_uteis)
-            
-            if check_status is None:
-                # Caso de Erro Técnico (Data não encontrada)
-                print(f"⚠️ PULA CHECK: Não foi possível calcular ALM para o fundo {fundo_id} (Verifique tabela de dias úteis).")
-                
-            elif check_status is False:
-                # Caso de Falta de Liquidez Real
-                print(f"❌ ALERTA DE LIQUIDEZ: Fundo {fundo_id} possui descasamento de fluxo!")
-                
-                # Só acessa as colunas se o DataFrame não estiver vazio
-                if not df_alm_detalhe.empty and 'sobra_caixa' in df_alm_detalhe.columns:
-                    dias_problematicos = df_alm_detalhe[df_alm_detalhe['sobra_caixa'] < 0]
-                    print("Dias com insuficiência de caixa:")
-                    print(dias_problematicos[['data', 'resgate_acumulado', 'liquidez_acumulada', 'sobra_caixa']].head(3))
-                    
-                    logging.warning(f"Fundo {fundo_id}: Liquidez insuficiente.\n{dias_problematicos.head(1)}")
-            else:
-                # Caso Sucesso
-                print(f"✅ Check de Liquidez OK: Ativos cobrem todos os resgates futuros.")
-
-            if check_status is not None:
+            if df_alm_detalhe is not None and not df_alm_detalhe.empty:
+                dias_negativos = df_alm_detalhe[df_alm_detalhe['sobra_caixa'] < -0.01]
+                if dias_negativos.empty:
+                    print("   -> Check de Liquidez OK: nenhuma sobra de caixa negativa ao longo do fluxo.")
+                else:
+                    datas_com_problema = dias_negativos['data'].dt.strftime('%d/%m/%Y').tolist()
+                    menor_sobra = dias_negativos['sobra_caixa'].min()
+                    aviso = (
+                        f"   -> AVISO: Fundo {fundo_id} com sobra de caixa negativa "
+                        f"em {', '.join(datas_com_problema)} (mínimo: {menor_sobra:,.2f})."
+                    )
+                    print(aviso)
+                    logging.warning(aviso)
                 # 1. EXPORTAR DETALHE PARA EXCEL
                 nome_arquivo_alm = f"ALM_Detalhado_{fundo_id}_{data_base}.xlsx"
                 
@@ -429,8 +421,10 @@ if __name__ == "__main__":
                 df_export.columns = ['Data', 'Resgate do Dia', 'Liquidez do Dia', 'Resgate Acumulado (Passivo)', 'Liquidez Acumulada (Ativo)', 'Sobra de Caixa']
                 
                 # Salva o arquivo
-                df_export.to_excel(nome_arquivo_alm, index=False)
-                print(f"   -> Detalhe do ALM salvo em: {nome_arquivo_alm}")
+                # df_export.to_excel(nome_arquivo_alm, index=False)
+                # print(f"   -> Detalhe do ALM salvo em: {nome_arquivo_alm}")
+            else:
+                print("   -> Não foi possível calcular o detalhe do ALM para o fundo.")
             
             # --- PREPARAÇÃO DA TABELA PARA O RELATÓRIO ---
             # Se o check falhou ou deu erro, passamos uma lista vazia ou a tabela parcial
